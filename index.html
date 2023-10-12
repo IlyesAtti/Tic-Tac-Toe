@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="grid.module.css">
+        <title>Tic Tac Toe</title>
+        <!-- <link rel="stylesheet" href="button.module.css"> -->
+    <body>
+        <div class = "restart">
+            <button id = "rst" onClick="restartGame()"> Restart</button>
+        </div>
+        <div class="container">
+            <div class="grid-container" id = "table">
+                <div class="grid-item" id = "1" onclick="printTheCharacter(id)"></div>
+                <div class="grid-item" id = "2" onclick="printTheCharacter(id)"></div>
+                <div class="grid-item" id = "3" onclick="printTheCharacter(id)"> </div>
+                <div class="grid-item" id = "4" onclick="printTheCharacter(id)"> </div>
+                <div class="grid-item" id = "5" onclick="printTheCharacter(id)"> </div>
+                <div class="grid-item" id = "6" onclick="printTheCharacter(id)"> </div>
+                <div class="grid-item" id = "7" onclick="printTheCharacter(id)"> </div>
+                <div class="grid-item" id = "8" onclick="printTheCharacter(id)"> </div>
+                <div class="grid-item" id = "9" onclick="printTheCharacter(id)"> </div>
+        </div>
+        <br>
+        <div class="finalMesage">
+            <h1 id="mesage"></h1>
+         </div>
+        </div>
+         <script src = "script.js"></script>
+         <style styl = "grid.module.css"></style>
+    </body>
+</html>
