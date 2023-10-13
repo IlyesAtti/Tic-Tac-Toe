@@ -54,9 +54,6 @@ function verifWiner(id) {
             }
         }
     }
-    if (mesages == 0 && player == 9) {
-        document.getElementById('mesage').innerText = "Draw game";
-    }
 }
 
  function restartGame() {
