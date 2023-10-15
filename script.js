@@ -31,24 +31,24 @@ function verifWiner(id) {
             document.getElementById('mesage').innerText = "Draw game";
         }
         for (let i = 0; i < 8; ++i) {
-            foundx = 0;
-            foundo = 0;
+            foundX = 0;
+            foundO = 0;
             for (let j = 0; j < 3; ++j) {
                 for (let z = 0; z <= xs.length; ++z) {
                     if (winerCombinations[i][j] == xs[z]) {
-                        ++foundx;
+                        ++foundX;
                     }
                 }
                 for (let z = 0; z <= os.length; ++z) {
                     if (winerCombinations[i][j] == os[z]) {
-                        ++foundo;
+                        ++foundO;
                     }
                 }
             }
-            if (foundx == 3) {
+            if (foundX == 3) {
                 document.getElementById('mesage').innerText = "Player X win";
             }
-            if (foundo == 3) {
+            if (foundO == 3) {
                 document.getElementById('mesage').innerText = "Player O win";
             }
         }
